@@ -18,18 +18,13 @@ export function Hero() {
           <h1>Shiv Shakti Singh</h1>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-          <h3>React Frontend Developer</h3>
+          <h3>React Frontend Developer / NextJs Developer / MERN Developer</h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
           <p className="small-resume">Continuously Working from January , 2022</p>
         </ScrollAnimation>
 
 
-        <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
-          <BrowserRouter>
-            <NavHashLink smooth to="#contact" className="button">Contact</NavHashLink>
-          </BrowserRouter>
-        </ScrollAnimation>
         
         <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
       <div className="social-media"><a
@@ -40,7 +35,7 @@ export function Hero() {
         <img src={linkedin} alt="Linkedin" />
       </a>
         <a
-          href="https://github.com/shivshaktisingh-cedcommerce"
+          href="https://github.com/shivforevershakti"
           target="_blank"
           rel="noreferrer"
         >
