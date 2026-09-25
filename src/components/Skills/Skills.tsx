@@ -7,10 +7,8 @@ import jsIcon from "../../assets/js-icon.svg";
 import nodeIcon from "../../assets/node-icon.svg";
 import reactIcon from "../../assets/react-icon.svg";
 import sassIcon from "../../assets/sass-icon.svg";
-import shopifyIcon from "../../assets/shopify.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import vueIcon from "../../assets/vue-icon.svg";
-import wordpressIcon from "../../assets/wordpress.svg";
 import githubIcon from "../../assets/github.svg";
 
 const skills = [

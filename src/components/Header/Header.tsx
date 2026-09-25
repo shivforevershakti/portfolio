@@ -6,11 +6,6 @@ import { useState } from 'react'
 export function Header() {
   const [isActive, setActive] = useState(false)
 
-  function toggleTheme() {
-    let html = document.getElementsByTagName('html')[0]
-    html.classList.toggle('light')
-  }
-
   function closeMenu() {
     setActive(false)
   }

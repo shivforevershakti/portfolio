@@ -1,9 +1,6 @@
 import { Container } from "./styles";
 import ScrollAnimation from "react-animate-on-scroll";
 import Illustration from "../../assets/illustration.svg";
-import linkedin from "../../assets/linkedin.svg";
-import githubIcon from "../../assets/github.svg";
-import whatsapp from "../../assets/whatsapp.svg";
 import resume from "../../assets/ShivShaktiSinghResume.pdf";
 
 export function Hero() {

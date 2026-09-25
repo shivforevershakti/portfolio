@@ -1,7 +1,4 @@
 import { Container } from "./styles";
-import linkedin from "../../assets/linkedin.svg";
-import github from "../../assets/github.svg";
-import whatsapp from "../../assets/whatsapp.svg";
 
 export function Contact() {
   return (
