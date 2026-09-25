@@ -23,11 +23,11 @@ export const Container = styled.div`
       outline: none;
       border: none;
       background:none;
-      border: 1px solid #FFF;
-      color: white;
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
       font-weight: 600;
       &::placeholder{
-        color: #FFF;
+        color: var(--text-secondary);
       }
     }
 
@@ -66,6 +66,6 @@ export const ContainerSucces = styled.div`
     margin-top: 0.8rem;
     text-transform: uppercase;
     text-align: center;
-    color: #fbfbfb;
+    color: var(--surface);
   }
 `

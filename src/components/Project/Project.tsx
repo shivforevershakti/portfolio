@@ -8,32 +8,30 @@ export function Project() {
     <Container id="project">
       <h2>My Projects</h2>
       <div className="projects">
-
-
-
-        <ScrollAnimation animateIn="flipInX">
+         <ScrollAnimation animateIn="flipInX">
           <div className="project">
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
               <div className="project-links">
-                <a href="https://bespoke-blancmange-8d9e89.netlify.app/" target="_blank" rel="noreferrer">
+                <a href="https://dynamic-engine-dashboard-cl.vercel.app/" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a>
               </div>
             </header>
             <div className="body">
-              <h3>Weather App</h3>
+              <h3>Generative AI Dashboard</h3>
               <p>
-                This website shows the weather of any city. It is easy to find what is the temperature of any global city, whether it's inside india, or outside.
-              </p>
+                Created a Generative AI Dashboard using nextJs , where user can interact with AI models, generate content, and manage their AI projects. </p>
             </div>
             <footer>
               <ul className="tech-list">
                 <li>React</li>
+                <li>LLM</li>
+                <li>NodeJs</li>
               </ul>
             </footer>
           </div>
-        </ScrollAnimation>
+        </ScrollAnimation>LLM
 
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
@@ -115,31 +113,6 @@ export function Project() {
             <header>
               <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
               <div className="project-links">
-                <a href="https://supremeg.netlify.app/" target="_blank" rel="noreferrer">
-                  <img src={externalLink} alt="Visit site" />
-                </a>
-              </div>
-            </header>
-            <div className="body">
-              <h3>Created Static design for freelance client used NextJs , tailwind and typescript.</h3>
-              <p>
-                I successfully developed a static website design for a freelance client using Next.js, Tailwind CSS, and TypeScript. The project focused on delivering a visually appealing, responsive, and high-performance user interface while maintaining clean, maintainable code.</p>
-            </div>
-            <footer>
-              <ul className="tech-list">
-                <li>React</li>
-                <li>React compatible</li>
-              </ul>
-            </footer>
-          </div>
-        </ScrollAnimation>
-
-
-        <ScrollAnimation animateIn="flipInX">
-          <div className="project">
-            <header>
-              <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#23ce6b " stroke-width="1" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
-              <div className="project-links">
                 <a href="https://github.com/shivforevershakti/blogapp" target="_blank" rel="noreferrer">
                   <img src={externalLink} alt="Visit site" />
                 </a>
@@ -158,8 +131,6 @@ export function Project() {
             </footer>
           </div>
         </ScrollAnimation>
-
-
       </div >
     </Container >
   );

@@ -7,7 +7,7 @@ export const Container = styled.header`
   align-items: center;
   padding: 1.8rem 10rem;
   
-  background-color: #21212150;
+  background-color: var(--header-surface);
   
   backdrop-filter: blur(6px);
 
@@ -22,7 +22,7 @@ export const Container = styled.header`
     align-items: center;
     gap: 1.8rem;
     a{
-      color: #FFFF;
+      color: var(--text-primary);
       padding: 0.6rem;
       font-family: 'Red Hat Display', sans-serif;
       font-weight: 500;
@@ -48,7 +48,7 @@ export const Container = styled.header`
   .menu{
     width: 2rem;
     height: 0.2rem;
-    background: #FFFF;
+    background: var(--text-primary);
     position: relative;
     cursor: pointer;
     display: none;
@@ -83,7 +83,7 @@ export const Container = styled.header`
     position: absolute;
     width: 100%;
     height: 0.2rem;
-    background: #FFFF;
+    background: var(--text-primary);
     cursor: pointer;
     transition: .6s;
   }
@@ -121,7 +121,7 @@ export const Container = styled.header`
 
   label:after {
     content: '';
-    background: #FFF;
+    background: var(--surface-raised);
     width: 20px;
     height: 20px;
     -webkit-border-radius: 50%;

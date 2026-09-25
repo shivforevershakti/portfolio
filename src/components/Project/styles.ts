@@ -19,13 +19,13 @@ export const Container = styled.section`
 
     .project{
       padding: 2rem 1.8rem;
-      background-color: #2b2b2b;
+      background-color: var(--surface-raised);
       border-radius: 1.2rem;
       transition: 0.25s;
       display: flex;
       flex-direction: column;
       height: 100%;
-      color: #FFF;
+      color: var(--text-primary);
       &:hover{
         transform: translateY(-5px);
         background-color: var(--pink);
@@ -55,7 +55,7 @@ export const Container = styled.section`
         letter-spacing: 0.12rem;
         margin-bottom: 2rem;
         a{
-          color: #FFFF;
+          color: var(--text-primary);
           border-bottom: 1px solid var(--green);
           transition: color 0.25s;
           &:hover{

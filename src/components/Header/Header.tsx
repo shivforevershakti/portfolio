@@ -3,7 +3,6 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import { NavHashLink, HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
 
-import CV from '../../assets/ShivShaktiSinghResume.pdf'
 export function Header() {
   const [isActive, setActive] = useState(false)
 
@@ -24,14 +23,14 @@ export function Header() {
           <span>Singh</span>
         </HashLink>
 
-        <input
+        {/* <input
           onChange={toggleTheme}
           className="container_toggle"
           type="checkbox"
           id="switch"
           name="mode"
         />
-        <label htmlFor="switch">Toggle</label>
+        <label htmlFor="switch">Toggle</label> */}
 
         <nav className={isActive ? 'active' : ''}>
           <NavHashLink smooth to="#home" onClick={closeMenu}>
@@ -40,12 +39,21 @@ export function Header() {
           <NavHashLink smooth to="#about" onClick={closeMenu}>
             About me
           </NavHashLink>
+          <NavHashLink smooth to="#services" onClick={closeMenu}>
+            Services
+          </NavHashLink>
+          <NavHashLink smooth to="#skills" onClick={closeMenu}>
+            Skills
+          </NavHashLink>
+          <NavHashLink smooth to="#experience" onClick={closeMenu}>
+            Experience
+          </NavHashLink>
           <NavHashLink smooth to="#project" onClick={closeMenu}>
             Project
           </NavHashLink>
-          <a href={CV} download className="button">
-            CV
-          </a>
+          <NavHashLink smooth to="#contact" onClick={closeMenu}>
+            Contact
+          </NavHashLink>
         </nav>
 
         <div

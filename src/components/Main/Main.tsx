@@ -3,6 +3,9 @@ import { Container } from "./styles"
 import { Hero } from "../Hero/Hero"
 import { About } from "../About/About";
 import { Project } from "../Project/Project";
+import { Services } from "../Services/Services";
+import { Skills } from "../Skills/Skills";
+import { Experience } from "../Experience/Experience";
 import wordpress from "../../assets/wordpress.svg";
 import shopify from "../../assets/shopify.svg";
 import htmlIcon from "../../assets/html-icon.svg";
@@ -14,6 +17,7 @@ import reactIcon from "../../assets/react-icon.svg";
 import typescriptIcon from "../../assets/typescript-icon.svg";
 import vueIcon from "../../assets/vue-icon.svg";
 import boostrapIcon from "../../assets/bootstrap-icon.svg";
+import { Contact } from "../Contact/Contact";
 
 export function Main() {
   return (
@@ -257,7 +261,11 @@ export function Main() {
       />
       <Hero></Hero>
       <About></About>
+      <Services></Services>
+      <Skills></Skills>
+      <Experience></Experience>
       <Project></Project>
+      <Contact/>
     </Container>
   );
 }

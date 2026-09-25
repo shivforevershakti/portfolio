@@ -1,56 +1,69 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  padding-top: 15%;
+  min-height: 100vh;
+  padding: 15% 0 8rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 8rem;
-  background: rgba(0,0,0,0);
+  background: var(--surface);
+
   .hero-text{
+    max-width: 70rem;
+
     & > p{
       font-size: 1.8rem;
     }
+
     h1{
-      font-size: 7rem;
+      color: var(--text-primary);
+      font-size: clamp(4.5rem, 7vw, 7rem);
+      line-height: 1;
     }
 
-    h3{
-      color:var(--green);
-      margin: 1rem 0;
+    h1 span,
+    .role {
+      color: var(--green);
     }
 
-    
-    p.small-resume {
-      margin-bottom: 5rem;
-    }
-  }
-// New added
-  .social-media{
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-    padding-top:5rem;
-    padding-left:1rem;
-
-    img,span{
-      font-size: 3rem;
-      width: 3.5rem;
+    .hero-description {
+      max-width: 60rem;
+      margin-top: 2.5rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
     }
   }
 
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-top: 3rem;
 
-  .button{
-    margin-top: 5rem;
-    padding: 1.4rem 6rem;
+    a {
+      padding: 1.2rem 2.4rem;
+      border-radius: 2rem;
+      font-weight: 600;
+    }
+
+    .hire-button {
+      background: var(--green);
+      color: var(--surface);
+    }
+
+    .resume-button {
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+    }
   }
 
   .hero-image{
     img{
-      max-width: 500px;
+      display: block;
+      width: min(100%, 50rem);
     }
   }
-
 
   @media(max-width: 960px){
     display: block;
@@ -63,7 +76,7 @@ export const Container = styled.section`
     }
     
     .hero-image{
-      display: none;
+      margin-top: 5rem;
     }
   }
 

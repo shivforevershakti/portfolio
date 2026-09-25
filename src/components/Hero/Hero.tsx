@@ -1,64 +1,73 @@
-import { Container } from "./styles"
-import ScrollAnimation from "react-animate-on-scroll"
-import Illustration from "../../assets/illustration.svg"
-import linkedin from '../../assets/linkedin.svg'
-import githubIcon from '../../assets/github.svg'
-import whatsapp from '../../assets/whatsapp.svg'
-import Hello from '../../assets/Hello.gif'
+import { Container } from "./styles";
+import ScrollAnimation from "react-animate-on-scroll";
+import Illustration from "../../assets/illustration.svg";
+import linkedin from "../../assets/linkedin.svg";
+import githubIcon from "../../assets/github.svg";
+import whatsapp from "../../assets/whatsapp.svg";
+import resume from "../../assets/ShivShaktiSinghResume.pdf";
+
 export function Hero() {
   return (
     <Container id="home">
       <div className="hero-text">
-        <ScrollAnimation animateIn="fadeInUp">
-          <p>Hello <img src={Hello} alt="Hello" width="20px"/>, I'm</p>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.2 * 1000}>
-          <h1>Shiv Shakti Singh</h1>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.4 * 1000}>
-          <h3>React Frontend Developer / NextJs Developer / MERN Developer</h3>
-        </ScrollAnimation>
-        <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">Continuously Working from January , 2022</p>
+
+        {/* Role */}
+        <ScrollAnimation animateIn="fadeInUp" delay={100}>
+          <span className="role">
+            SENIOR FRONTEND DEVELOPER
+          </span>
         </ScrollAnimation>
 
-
-        
-        <ScrollAnimation animateIn="fadeInUp" delay={1 * 1000}>
-      <div className="social-media"><a
-        href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <img src={linkedin} alt="Linkedin" />
-      </a>
-        <a
-          href="https://github.com/shivforevershakti"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={githubIcon} alt="GitHub" />
-        </a>
-        <a
-          href="https://api.whatsapp.com/send/?phone=%2B919026814199&text=Hello+Shiv"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={whatsapp} alt="Whatsapp" />
-        </a>
-        </div>
+        {/* Main Heading */}
+        <ScrollAnimation animateIn="fadeInUp" delay={200}>
+          <h1>
+            Hi, I'm <span>Shiv Shakti</span>.
+            <br />
+            I build fast,
+            <br />
+            accessible web
+            <br />
+            experiences.
+          </h1>
         </ScrollAnimation>
 
+        {/* Description */}
+        <ScrollAnimation animateIn="fadeInUp" delay={300}>
+          <p className="hero-description">
+            Senior frontend engineer focused on scalable architecture,
+            exceptional user experiences, and measurable impact.
+          </p>
+        </ScrollAnimation>
+
+        {/* Buttons */}
+        <ScrollAnimation animateIn="fadeInUp" delay={400}>
+          <div className="hero-buttons">
+            <a
+              href="#contact"
+              className="hire-button"
+            >
+              <span>✉</span>
+              Hire Me
+            </a>
+
+            <a
+              href={resume}
+              download="Shiv-Shakti-Singh-Resume.pdf"
+              className="resume-button"
+            >
+              <span>↓</span>
+              Download Resume
+            </a>
+          </div>
+        </ScrollAnimation>
       </div>
-     
 
+      {/* Right Side Illustration */}
       <div className="hero-image">
-        <ScrollAnimation animateIn="fadeInRight" delay={1 * 1000}>
-          <img src={Illustration} alt="Ilustração" />
+        <ScrollAnimation animateIn="fadeInRight" delay={1000}>
+          <img src={Illustration} alt="Frontend developer illustration" />
         </ScrollAnimation>
       </div>
-     
     </Container>
-
-  )
+  );
 }
