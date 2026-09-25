@@ -11,7 +11,6 @@ function App() {
       <GlobalStyle></GlobalStyle>
       <Header></Header>
       <Main></Main>
-      <Contact></Contact>
       <Footer></Footer>
     </>
   )
