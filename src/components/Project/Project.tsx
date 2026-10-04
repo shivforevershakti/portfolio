@@ -31,7 +31,7 @@ export function Project() {
               </ul>
             </footer>
           </div>
-        </ScrollAnimation>LLM
+        </ScrollAnimation>
 
         <ScrollAnimation animateIn="flipInX">
           <div className="project">
